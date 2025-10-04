@@ -22,20 +22,6 @@ import { Button } from '../components/ui/Button';
 
 // Import all tool components
 import TimeWasteCalculator from '../components/tools/TimeWasteCalculator';
-import SleepVsRankCalculator from '../components/tools/SleepVsRankCalculator';
-import MentalMathSpeedTest from '../components/tools/MentalMathSpeedTest';
-import PhysicsFormulaGame from '../components/tools/PhysicsFormulaGame';
-import SyllabusTracker from '../components/tools/SyllabusTracker';
-import NegativeMarkingImpact from '../components/tools/NegativeMarkingImpact';
-import RevisionCalculator from '../components/tools/RevisionCalculator';
-import PeriodicTableQuiz from '../components/tools/PeriodicTableQuiz';
-import ConceptMatcher from '../components/tools/ConceptMatcher';
-import RankPredictor from '../components/tools/RankPredictor';
-import StudyStreakSimulator from '../components/tools/StudyStreakSimulator';
-import TopperComparison from '../components/tools/TopperComparison';
-import DoubtCostCalculator from '../components/tools/DoubtCostCalculator';
-import MockTestAnalyzer from '../components/tools/MockTestAnalyzer';
-import GoalMilestoneTracker from '../components/tools/GoalMilestoneTracker';
 
 const StudyTools = () => {
   const navigate = useNavigate();
