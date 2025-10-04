@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '../ui/Button';
-import { Flame, Brain, Trophy, Zap } from 'lucide-react';
+import { Flame, Brain, Zap } from 'lucide-react';
+
 
 const PhysicsFormulaGame = () => {
   const [gameStarted, setGameStarted] = useState(false);
