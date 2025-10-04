@@ -4,7 +4,6 @@ import {
   Calculator, 
   Brain, 
   Target, 
-  Timer, 
   Zap, 
   Trophy,
   TrendingUp,
@@ -14,10 +13,9 @@ import {
   Clock,
   Flame,
   ArrowLeft,
-  Home,
-  Gamepad2,
   BarChart3
 } from 'lucide-react';
+
 import { Button } from '../components/ui/Button';
 
 // Import all tool components
