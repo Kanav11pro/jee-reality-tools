@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import StudyTools from './pages/StudyTools'
 import RealityChecks from './pages/RealityChecks'
-import './App.css'
 
 function App() {
   return (
