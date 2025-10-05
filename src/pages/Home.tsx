@@ -18,7 +18,6 @@ import {
   Heart,
   Sparkles,
   CheckCircle2,
-  TrendingUp,
   Shield,
   Star
 } from 'lucide-react';
