@@ -17,8 +17,10 @@ import {
   Lightbulb,
   BarChart3,
   Flame,
-  Shield
+  Shield,
+  Users
 } from 'lucide-react';
+
 
 // Type definitions
 interface DailyData {
