@@ -186,12 +186,12 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                onClick={() => navigate('/tools')}
-                className="text-xl px-12 py-6"
-              >
-                🚀 EXPLORE TOOLS NOW
-                <ArrowRight className="w-6 h-6" />
-              </Button>
+  onClick={() => navigate('/reality-checks')}
+  className="text-xl px-12 py-6"
+>
+  🚀 START WITH REALITY CHECKS
+  <ArrowRight className="w-6 h-6" />
+</Button>
               <Button
                 onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
                 variant="outline"
@@ -334,12 +334,13 @@ const Home = () => {
               All tools are 100% FREE. No signup required. Start improving TODAY!
             </p>
             <Button
-              onClick={() => navigate('/tools')}
-              className="text-xl px-12 py-6"
-            >
-              🎯 START NOW - IT'S FREE
-              <ArrowRight className="w-6 h-6" />
-            </Button>
+  onClick={() => navigate('/reality-checks')}
+  className="text-xl px-12 py-6"
+>
+  🎯 TRY REALITY CHECKS - FREE
+  <ArrowRight className="w-6 h-6" />
+</Button>
+
           </div>
         </section>
 
