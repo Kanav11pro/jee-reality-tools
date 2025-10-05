@@ -15,7 +15,6 @@ import {
   TrendingDown,
   TrendingUp,
   Lightbulb,
-  CheckCircle2,
   BarChart3,
   Flame,
   Shield
@@ -101,7 +100,6 @@ const TimeWasteCalculator = () => {
   const chemistryProblems = Math.floor(totalWeekly / 0.25);
   const mathsProblems = Math.floor(totalWeekly / 0.5);
   const mockTests = Math.floor(totalWeekly / 3);
-  const revisionSessions = Math.floor(totalWeekly / 2);
 
   // Real JEE student data comparison (Based on research - 13.8 lakh students)[web:151][web:162]
   const avgJEEStudent = 4.5; // Average screen waste: 4.5 hrs/day
