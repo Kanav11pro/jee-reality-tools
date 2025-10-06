@@ -9,8 +9,14 @@ export default defineConfig({
     },
   },
   server: {
-    host: true,
+    host: '0.0.0.0',
     port: 5173,
-    allowedHosts: ['.replit.dev'],
+    allowedHosts: [
+      '.replit.dev',
+      '.id.repl.co',
+      '.sisko.replit.dev',
+      '.repl.co'
+    ],
+    strictPort: false,
   },
 })
