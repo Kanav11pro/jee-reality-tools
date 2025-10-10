@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './AIFiesta.css';
 
-// Custom scroll animation hook (no external library needed)
 const useScrollAnimation = (): [React.RefObject<HTMLDivElement>, boolean] => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -95,12 +94,12 @@ const AIFiestaPage: React.FC = () => {
         </ScrollSection>
       </section>
 
-      {/* Compare Section */}
+      {/* Compare Section with Horizontal Scroll Cards */}
       <section className="feature-section dark-section">
         <ScrollSection>
-          <div className="section-content">
-            <div className="section-header">
-              <div className="model-icons">
+          <div className="section-content-vertical">
+            <div className="section-header-center">
+              <div className="model-icons-center">
                 <div className="icon-circle"><span>🌀</span></div>
                 <div className="icon-circle"><span>⚡</span></div>
                 <div className="icon-circle"><span>🔮</span></div>
@@ -111,68 +110,86 @@ const AIFiestaPage: React.FC = () => {
               <h2 className="section-title">
                 Compare All Premium AIs at Once
               </h2>
-              <p className="section-description">
+              <p className="section-description-center">
                 Free AI models often deliver restricted and inferior answers. With AI
                 Fiesta, you get access to multiple top-tier premium models, all in
                 one place. Compare their responses side-by-side to experience
                 faster, smarter, and most accurate answers.
               </p>
-              <div className="feature-list">
-                <div className="feature-item">
-                  <span className="checkmark">✓</span>
-                  <span>Save hours of manual comparison</span>
-                </div>
-                <div className="feature-item">
-                  <span className="checkmark">✓</span>
-                  <span>Customize your AI team instantly</span>
-                </div>
-                <div className="feature-item">
-                  <span className="checkmark">✓</span>
-                  <span>Never miss the most accurate answer again</span>
+            </div>
+
+            {/* Horizontal Scroll Cards Container */}
+            <div className="cards-scroll-container">
+              <div className="card-item">
+                <div className="card-content">
+                  <div className="card-icon">✓</div>
+                  <h3>Save hours of manual comparison</h3>
+                  <p>Compare multiple AI responses instantly without switching between different platforms</p>
                 </div>
               </div>
-            </div>
-            <div className="mockup-container">
-              <div className="mockup-placeholder">
-                <p>🖥️ AI Comparison Interface</p>
+              <div className="card-item">
+                <div className="card-content">
+                  <div className="card-icon">⚡</div>
+                  <h3>Customize your AI team instantly</h3>
+                  <p>Select and customize which AI models you want to compare based on your needs</p>
+                </div>
+              </div>
+              <div className="card-item">
+                <div className="card-content">
+                  <div className="card-icon">🎯</div>
+                  <h3>Never miss the most accurate answer</h3>
+                  <p>Get the best possible answer by comparing responses from top AI models</p>
+                </div>
+              </div>
+              <div className="card-item">
+                <div className="card-content">
+                  <div className="card-icon">💡</div>
+                  <h3>Smart Context Understanding</h3>
+                  <p>All models understand your context and provide relevant, contextual answers</p>
+                </div>
               </div>
             </div>
           </div>
         </ScrollSection>
       </section>
 
-      {/* Super Fiesta Section */}
+      {/* Super Fiesta Section with Horizontal Cards */}
       <section className="feature-section green-section">
         <ScrollSection delay={200}>
-          <div className="section-content reverse">
-            <div className="section-header">
-              <div className="icon-badge">
+          <div className="section-content-vertical">
+            <div className="section-header-center">
+              <div className="icon-badge-center">
                 <span>🚀</span>
               </div>
               <h2 className="section-title">Introducing Super Fiesta</h2>
-              <p className="section-description">
+              <p className="section-description-center">
                 Super Fiesta is designed to automatically select the most suitable AI
                 model for your query, delivering a seamless and efficient
                 experience. It keeps context and maintains a consistent tone.
               </p>
-              <div className="feature-list">
-                <div className="feature-item">
-                  <span className="checkmark">✓</span>
-                  <span>Faster decisions via automatic best-model selection.</span>
-                </div>
-                <div className="feature-item">
-                  <span className="checkmark">✓</span>
-                  <span>Request alternatives without leaving the conversation.</span>
-                </div>
-                <div className="feature-item">
-                  <span className="checkmark">✓</span>
-                  <span>Unified context across models for a continuous dialogue.</span>
+            </div>
+
+            <div className="cards-scroll-container">
+              <div className="card-item">
+                <div className="card-content">
+                  <div className="card-icon">🎯</div>
+                  <h3>Automatic Model Selection</h3>
+                  <p>Faster decisions via automatic best-model selection based on your query type</p>
                 </div>
               </div>
-            </div>
-            <div className="mockup-container">
-              <div className="mockup-placeholder">
-                <p>💬 Super Fiesta Chat</p>
+              <div className="card-item">
+                <div className="card-content">
+                  <div className="card-icon">🔄</div>
+                  <h3>Seamless Alternatives</h3>
+                  <p>Request alternatives without leaving the conversation flow</p>
+                </div>
+              </div>
+              <div className="card-item">
+                <div className="card-content">
+                  <div className="card-icon">💬</div>
+                  <h3>Unified Context</h3>
+                  <p>Unified context across models for a continuous dialogue experience</p>
+                </div>
               </div>
             </div>
           </div>
@@ -200,47 +217,47 @@ const AIFiestaPage: React.FC = () => {
             <p className="pricing-tagline">
               Experience smarter & more accurate answers
             </p>
-            <div className="mockup-container">
-              <div className="mockup-placeholder pricing-mockup">
-                <p>💰 Pricing Dashboard</p>
-              </div>
-            </div>
           </div>
         </ScrollSection>
       </section>
 
-      {/* Prompt Boost Section */}
+      {/* Prompt Boost Section with Cards */}
       <section className="feature-section gradient-section">
         <ScrollSection delay={200}>
-          <div className="section-content">
-            <div className="section-header">
-              <div className="icon-badge">
+          <div className="section-content-vertical">
+            <div className="section-header-center">
+              <div className="icon-badge-center">
                 <span>⚡</span>
               </div>
               <h2 className="section-title">Prompt Boost – Instant Enhancement</h2>
-              <p className="section-description">
+              <p className="section-description-center">
                 No need to craft the perfect question. Just write what you want, hit
                 Enhance Prompt, and watch every AI respond with smarter, richer
                 answers.
               </p>
-              <div className="feature-list">
-                <div className="feature-item">
-                  <span className="checkmark">✓</span>
-                  <span>Turn rough ideas into perfect prompts</span>
-                </div>
-                <div className="feature-item">
-                  <span className="checkmark">✓</span>
-                  <span>Get 10x better responses instantly</span>
-                </div>
-                <div className="feature-item">
-                  <span className="checkmark">✓</span>
-                  <span>No prompt engineering skills needed</span>
+            </div>
+
+            <div className="cards-scroll-container">
+              <div className="card-item">
+                <div className="card-content">
+                  <div className="card-icon">✨</div>
+                  <h3>Perfect Prompts</h3>
+                  <p>Turn rough ideas into perfect prompts automatically</p>
                 </div>
               </div>
-            </div>
-            <div className="mockup-container">
-              <div className="mockup-placeholder">
-                <p>✨ Prompt Boost Tool</p>
+              <div className="card-item">
+                <div className="card-content">
+                  <div className="card-icon">10x</div>
+                  <h3>Better Responses</h3>
+                  <p>Get 10x better responses instantly with enhanced prompts</p>
+                </div>
+              </div>
+              <div className="card-item">
+                <div className="card-content">
+                  <div className="card-icon">🎓</div>
+                  <h3>No Skills Needed</h3>
+                  <p>No prompt engineering skills needed - just write naturally</p>
+                </div>
               </div>
             </div>
           </div>
