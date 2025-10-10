@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import './AIFiesta.css';
 
 // Custom scroll animation hook (no external library needed)
-const useScrollAnimation = () => {
+const useScrollAnimation = (): [React.RefObject<HTMLDivElement>, boolean] => {
   const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,7 +32,12 @@ const useScrollAnimation = () => {
   return [ref, isVisible];
 };
 
-const ScrollSection = ({ children, delay = 0 }) => {
+interface ScrollSectionProps {
+  children: React.ReactNode;
+  delay?: number;
+}
+
+const ScrollSection: React.FC<ScrollSectionProps> = ({ children, delay = 0 }) => {
   const [ref, isVisible] = useScrollAnimation();
 
   return (
@@ -46,7 +51,7 @@ const ScrollSection = ({ children, delay = 0 }) => {
   );
 };
 
-const AIFiestaPage = () => {
+const AIFiestaPage: React.FC = () => {
   return (
     <div className="ai-fiesta-container">
       {/* Navigation */}
